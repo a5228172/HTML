@@ -1,0 +1,8 @@
+
+var AAA = Function;
+Function = function (x) {
+  if (x != 'debugger') {
+    return AAA(x);
+  }
+  return function () {};
+};
